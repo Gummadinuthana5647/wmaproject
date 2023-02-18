@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> shopping website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    body {
+	font-family: "Open Sans", sans-serif;
+}
+h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 80px;
+}
+h2 b {
+	color: #ffc000;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	background: rgba(0, 0, 0, 0.2);
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	min-height: 330px;
+    text-align: center;
+	overflow: hidden;
+}
+.carousel .item .img-box {
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.carousel .item .btn {
+	color: #333;
+    border-radius: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+.carousel .item .btn:hover, .carousel .item .btn:focus {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+}
+.carousel .item .btn i {
+	font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 15px;
+}
+.carousel .carousel-control {
+	height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.carousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.carousel .item-price span {
+	color: #86bd57;
+	font-size: 110%;
+}
+.carousel .carousel-control.left i {
+	margin-left: -3px;
+}
+.carousel .carousel-control.left i {
+	margin-right: -3px;
+}
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+     <h1><strong> NOOTHANA NARSAIAH LIFE-HOME </strong><h1>
+     <h1> <strong>BEST E-COMMERCE ONLINE-PLATFORM</strong> </h1>
+     <p class="lead"><strong>Welcome to my closet....stay awhile and shop. </strong>In today's world online shopping is the most popular way of connecting with the people. At---> <a href="https://gummadinuthana5647.github.io/PROJECT.1/shopping%20website.html" class="text-success" target="_blank"><STRONG>NOOTHANA NARSAIAH LIFE-HOME..!</STRONG></a></p>
+                <h2>Trending <b>Products</b></h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://cdn.pixabay.com/photo/2022/12/04/07/03/woman-7633843__340.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>WOMEN'S WEAR</h4>
+                                        <p class="item-price"><strike>$1300.00</strike> <span>$800.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://cdn.pixabay.com/photo/2017/06/15/03/47/lady-honor-2404018__340.jpg" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>KIDS FASHIONS</h4>
+                                        <p class="item-price"><strike>1500.00</strike> <span>800.99</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>		
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrd8yErdQ8RVv6D2aoOeiaRTGBqoj5yXlg_Q&usqp=CAU" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>T-SHIRTS</h4>
+                                        <p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>								
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVFBYVFRISGBIYGRkSEhgREhERERESGBgZGRgUGBgcIy4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHjEkISs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDQ0NDQ0NDQxNDE4NDE0NDQxNP/AABEIARMAtwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAAIEBQYBB//EAD4QAAIBAgMFBQUGBAUFAAAAAAECAAMRBCExBRJBUXEGImGBkRMyobHRIyRCUsHwFDNichUWNIKiU5KywvH/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAhEQEBAAICAgIDAQAAAAAAAAAAAQIRITESQQMyIlFxQv/aAAwDAQACEQMRAD8A1oOUq+0LfYtLEHISq7Rt9g0TLo+Pbz18jvDnnJIzgQLgx2HfK3KSq8ScOxVlbkQZvqT3UHmBMBTe+U2mx6u/SQ8hY+WUOF5J8s42sVMdeCE7eWQEvOExm9GVHyM22PoaTtd91WPIRqNkJE2zWtT3Rqx3R5wW6jSbqpoG4LHViW9Y5zYGdQWykLadayhRq2XlOZ19AYWkHZnbS9l6SU9NBwiooFUDwg6jzMBURb6TW4RQEWwysJj2aatHtTW2thKY+08/SWrksLecTtmYsMLdeMbVOZjzpO9peEMI5ylfs+uWc2HcGV+Zk2ppGl/Etn5BgzsHeKKc5WyHSVPaT+Q0sk0HSVXaX+Q02XQY9sAtVs8o9Kd88wYNDDo0SqxHr1HRrA+MmYLtBWprura2veErsa3fOcDRFzmbRpC2tCO1mK/LT+MX+a8VyT4/WVX8ILX3xI7C2QN5tt4xfDtbifyJ8Yv824g600+Mole05SBYkXAHjCHjGkHa2t/0k/7oDEdpKrspZFAXMAG+crhgXtcOtpHe6mxIPSDsZJF/g9o1ajWAHjJOJQh9987aAcJC7PNZzLnEiSqivbFjkYJ8Uvj6STVUXgGmmmu0d8Ut+PpNdgKu9TU2Iy4zJORlkJsMN7i9BHieXpOw5zkPG7xYoLgcT4eEJRrHfsPPwjqp7xjd4l6yHwCAZDgJIqnKR8Ec4aubAkx59SX7AXzikKrVdjankOJP6RSe1tJo0HSU/aU/YN++MuFbujpKXtN/IaNek52wamFoGRlSHoLa8WqRDxfvmBVTDY9xvwAqCPOk7eUncJEaVItGpUHOPLjnBybcDZs4SlTYg2tGpUUG8cKg4H4QhuHpRqfm+M41NhracDj80eiprv8AwgHhc7AfvkS8xBzmf2Ey+0yN/KXWOpbxvcjpJZTlSXYDmBqThwn9TesC1C34jMOzHOc11Nj7Nd3M2ExrUzf3pscBT3EUXJy4x4nkm4RN3qdYyqe8YjUC5k2HjIrYkHNO8TpabfAa5WmCIvbwh8QRum4vIGzaB3t5jdreQ8JNxB7sefVOz8kcWHSKNBiiKnI2Q6So7Tn7BvL5y2pjIdJUdqD9g3l8416JO2FSGQSOlQSVSzBMSqxUYo3eKnTvxE7iD3zGqZT0l7SFw3iJ103eXlI4aERSxCjMk2A5mY24CusOib2Q4TRYbsvZUdqgubioikE3DZbrWsAVzvn6SxxmxaT00VCUqIu6De/cybMHNrF/Le8LTWUksY/+Ebl8YmTdIuPjJmLw703ZGJupsD+ZeDeYsZBqsSYN1TUXGwB9qek0FczN9n8SBU3SMzxl9iawU5yeU5NjZo1pFqmPOJTnI9SunOCQ1ph1HWa7De4vQTGGut9eMutnVMRUbOy09BzMaJ5c1M2pQat3EcgfjI5cpK2fglpIEFzbiczD06YUWEcpmjVMwfGPxB7sHguMdiPdlZ9Ur9kYGKCNYXsASfDT1ik9xbSUmg6Sn7UfyGlvvZDpKftP/p28o16TnbDU1HKTKTAAiRKcOgiVWKjFCzmKmhIJGg1jsZ7xjqDgIRzlPSXslp8b5DMzSYStSwiEVAWrMVayMrhLFt0BxkCVbOxOvrnVIGhsDmb8QDBu1875DIfqYYGX6WmN7R13BCtuJcnuBRbPTetw0vKxNo4m/dqVdb++5FxpkTb4Sz2Jsn2zhSDujvPbgBla/W48jzm6XZdJEAWmg6KIuWejYfFubvDAY/axqlN+nu1FG6WF7MOFwdLG/rIbe9NL2r2Yppl1UB07xIFrrxvM1Ssyq189D5QSyzZrjcbpa9n8MTVLW7oE0ddQbXErOzTDvyyrmJleTYxGemvISO6DkJLcSNU0glNYiFAWAsNZr8KoCrblMog7w6zWUmAUX5RoSjRpYAZwTVSfdHmdJwUb+8b/ACmlCpmzsQGJABtz4SVXItmLwWAUC8fiNJSfVK/ZGtl9JyOadiKnroJTdqT93by+ct75So7Tn7u3l841JO2DSoeUk0Lm94KiZJRtYlUxVWOHfMfh0XdsTY8IzHt34/CUi7oo/EQuWuucp6T9g41bWzGmQFiTnnf0jaVyenz5y07Q0qaezC7277NHPeOe+XNhytu2Pj0hNi7K9uLqQER0WoDYnvEW9dPWG3UCTeTWbEwj0MMzhGNRxcKtgbaAXOQgNlYnE1KoV2dVzJUnfUAEixJUWJ1FjNTTO6m6dALCQFxO653UJUe9u2uTwAuRIbjqkvpk9u42sXqJut7MArZbAvkQTexuPMaTLYV7IPEmehYvE0yKjEWXvHvCxItnlPPlSwUWyFhHwu4n8mOrLtquzCDvyXi0YkFTaQ+zJADyzeLl20QGSpb3oFqVT80nwdSLKaxVslS4s2fCanB4U7ql2LG3lM8R3h1E1tId1Y8JRQtoyFMEsMLUzCaGdraTmF4ztbSU/wAp/wCgHnY1nHMesUkqIRlKftOv3d/L5y4DZCU/aj/TN5fOPU4wiESQjayGiCSqaWEWqxAxqd8dJp+wmzd52rEZJdUv+YjM+ht/uPKZquhLjK5OQA1J4Ceq7CwAo0ETiAN482ObH1vLYTdQyrzntOA2Jq7qgC9iBYX3e6TbxN5Z9hyG3wrDe3nNQfiK7i+zI8N4v0NtLy47Q9nhVdnQ7tQqMj7rFSTrw1Mjdi9gVKDvVqqFYr7Omt1YgE3Ykjoo8ouXEpsObGsqVRYXyNr5yrx+zwUbddgxubrUdV6WB0kzHsrr4eHCZjaFR0puRUbIHd7xtc5DLqROW3d07MeJtA2yRSpClvXqOd9zcsQoOlznrb4ygp2vm0etRibk3J1JzJ6mNxGsvjNTSGeXldtF2a/HLHEVAMiQJXdmPx+Us8RRVtREy7GI/tk/MIx6q294Tr4RAdINqCcoOB3Ud6q3HeGs1VDEpuixvlwzmSeihYZcZr8BQVVUADSNCURqxtkpglaoeAHxk5kygkWHQWnYJHBJJvlJFUXFp2jxneIlJ0newVwPgIpYtFH8IXzyV3ASn7VH7u/l8xLYnISl7VN93fy+cnTxhqMkhpAp1TwEmU7nUWi2KSrDs/gvaYpLjuoPaHytu/8AIg+RnplJe6PWZXsdhd0O5Gbmy/2pkPiz+k14E6MJrFz5XlGaldp1sDlcsfS0kJYXJ/ds4GrUvmdeRN7QZSXscbZ0rauDRbi763yNz42Ezm2sIzh6d7NkVLA2YAgjSaR8RY+BJH9pHEeGvplI20sIXUMvvLfI6kch4yGWM7xXwyu9ZXivOHQoSrKQ6mzA6gwNVrzR9pNnNupW3dQEqZZi2SMfLu+QmbeGBeOGh7MMe/LlzKjs2uTyfXdhmBfOTy7PiJU1kaqYN8RU/KIFqlT8og0O45bvDrNjhNF6TDNiHv7o1mt2dXqFFLJbzjQlXDQAnDWPKCFYQgn0OMXEQeEcEHOEbhKTpO9phinFa8Uskr+A6Sg7Vf6dvKaIrkOkz3atfsGkKtGDwzyeHvKyic5ebEw+/XprwB325WTvZ9bW84LN08vD0DYuG3EVPyhUP9wF2PqZbGRtmp3Aedz6n6ASUwnT1HP7DfQa5nh8JExKm9xqBbkB9eMkvy8D85Brub2v++Xwk8qfGIdRcjc8yfD9/WOp1rWytfW/4jkA2fl6wZJOeoHDTzv6mdw6M4BNrcOXpJ/w/wDRsRh1ZSrKCrAhwc73mB23sV6Ld1Wamc1e17f0tbQ/P4T0tKdgL5kcTl52gqtBSCCAVIswIuCOUNxLMmE7PfjloSJDr4JsNiCik+ycF6fHTVfK48iIUmRy7WxuyqKLwNQC0I44yLVeCHqDWbvec3GAHcXoJhntvDrNzgT3F6COlUt1gwgtpCExqaTNRMLSAuYV1vlziw+hiYZiUnSd7MalUQ2DRQ6NncxTTQchcB0mc7XPagRzl7fIZ8Jnu1x+wMBmDRLzY9jsLb2j8lFNerHeP/ivrMhhQWIA1npvZjBblGmDqzGo3jnYf8VWPjN5Bfq02HSygeXplHMI9ROEStSQsQP1HykZjkdMsz9fDSTsSuR8pU1g18h1kc+KtjNxWYusbkg8eH78JaYEWRel/WVFSkScrHoby9Qd0aRMe9m+TUkkSEbKMYwe+RA7/wBY+0tK/tAgKoeIY+m6b/pKB6W9xI6SVj9pb9dkHuoNz/d+I/p5QIMjl2vjxEaphiB75tIGJp/1GWld8pV19c5sWyRVw5YixJPhNlsz2qKA3eAHmJXbBpqcyM5qKS8pQnsNcSp8OsLTOU5iaasNBeQ0pVE0OXIxdDtbYc5GJmzErjjSFbune6azmAeoWLPodBG3wXXK0DZxQd84oJeBs5AIyEou1oH8OesvLZCUXaw/dzzuLQgw9CmcgoNzkLczpPZNl4bcCjgiimPGwAvPMOz9JnxFFbG2+GOWVl73/rPWcGuvhl5/u0rhPadSgJwx8YY5Qa17G2siVEyyFidLWuT+/nJlaRypsedraX8MomRsapMbfK1gCc7ZXvwliBlImNCoV3ibFgovlvFiABJzLJycntBK3nCnCFtOEiEHndNgrs2e8xJa/Mm5kj245yZt7CU6Q31cM5cgoSgKqbsCAM7aCV+E3XVyQAV0g8ZR8rHalYSDVck5CSN/whVcWzUTajeVqw2BexvNJQMymzsdusF3bXNpqcOcoKbE5ns2cMucj1BnCUMjNK1g6UgDplI+L1shsZJeoBOKqngJr+gk9oS13Gov4iKSalHLu+kUXRtoyVBYZwWLdMrgHrI9WkSLAEdJHeipGZbzj6T2tuz9BHqk7qjcUsLWvc2X5EzUU6QHmbzzindG3kLqRoVLA/Ceh4YDcRbk2UBibkkgWNyeN5TG8aLkM0FOu05aMAVZpCqOwFrCzC/xN/lLRMODm2nAfWQ9qrmttLESee5juH+PVy1WU2rUIdXOYVgwXRciDa00SPcAgixAI6HSZzawljsWrvUU8Lr6EgfC0h8WV3XT82E8ZYsj1+UYyaRwjpZysH2kw9QVnb2Z9m27Z7d0kKARfykXBoWRxe2U32JoK6sjC6sLETDbRo/wzMljmLox0ZfrwmZDBa5HL4wi70BSdjmePKSFuYKaFhv5idZtKMxVAfaKfGbWn7oi5GxOc5x6HOCOsesEGnVMzGqSIic45YLeRk4P9oToM4oxcjFGK4KOWpgKmCDcT5SKNrU2AswjjtFecrvFPkXD7PXfUXNrgnxAzPwE11FLKJm9ivvuTwAA82P0BmmMbHWuApjtbQZxtBGY3JyHLTpHsCfCHRbC0IExlfj1uAfH5/8AyTmMi4lbgiLlN42DhdXbK7UpZGc7PN3GHJz8QD9ZN2gmRlbsNrO6dGHyPzE5MOMnb8n5fGvxHTiztp0uM1hKza+zUrJYjvLmh4g8R0P0loYwiZmK/wAN8SLZdI19nHgzTSbQw9jvjjr15yHuwNpQDZ7od4McuB0mt2fUD0wePHrK90vGYauabad0+94eMF5GcVaHWPWOWzAETijWLo+9mx6GctEsQ7oGcU4usUYqkTYCLpC/4col6yQL05XxS2mbAwW4m9+YkjoMvr6y1vnloePCVeGx+6CH0AAphRyvfP0k7BYpXFlvcZm40HylJ1otTEWEnFGURhAxoCpDNAtBRVOPXIzP4I7uIH9QZfhf9Jo8cgIMzuIASqj8Ac+hyPwM5MprPbtwvlhY0lOOAjKRj50uOmsI0iFcQZgEKogIIPGUr0yCRyl4ZDxtK/eGvHpFZXbsayCHCzhUTMZQxJQgZlTl/bLUJcXEqmSS9n1T7hPT6QaGVIWMEIBmYwSdisvBinMxRgOZihBOZhBORBs8ESZfyR0IzCaDZuF3EAPvHvN4ch5Sq2Rhd998+6vxbh6a+k0SiGBSMaY6NMYDHkdzJDyO8FFV4l7kiZ3argrfK3z6S4xAYO98gSTnxUJlbzPwmdxillpgZuc7eBbIelpxZW2vQ+OSRqNnPvIh5qvyk2RsNTsAOQA9BJQE6senDl244ygjD2gSIaUxhGMLiEjDFMq6w3Tb06QRdecn42lcX5fKQCg5QC4WE4jWNxrwtHboiuBwmZOw1TeBv70ZvSMlWxuJJXPPnBYaVyiNZyH3N2/jFNpthWMQQkgAZk2HUwpk/Y9DeYuRkuQ8WP0HzjSbJVnhMOEQKPM8zxMkxKJ2VI4Y1o8xjTMG0C4hjBtAKs2hhd8eIvblmLWMrcDskoSXQd0IEPioNz8ZoNy5HrHVFiXCW7UnyZTHxiLSp5R5WGVco1xG0mDaDcQxEY4grAWjGEKwjWEBgmFxaVjggkWGUtSJExdPRh0MWsiXPITljyEKBOgTCBuHkIWjcHQR1/CItMyW2YvFI9OqQLWyig020r2edvIS/wANQCKFHD4niZAwFG734Ln58P34S3USshK6onI605aFjTGNCGMaFgrRtoQCcIgYxROOI8CNcTMaBlB1BDWg6kzBERrCEInHEDI1owiFYZxrLAwDCMdLgiGIjLRTIQSOCQ1QQZtCwZAnCBCm04RAwVxFCbo8IpmaLZvun+79BJqzsUoV0zkUUzGtBtFFMzgiaKKZjDOPORTMUG+kUUzGmNeKKZgXjTFFAxhgzFFFGBYj3fOAScigE8ThiihrOLFFFAz/2Q==" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>WEDDING COLLECTIONS</h4>
+                                        <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGplYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>MEN'S WEAR</h4>
+                                        <p class="item-price"><strike>$2000.00</strike> <span>$1200.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1642764873654-9eef0467b342?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hpcnRzJTIwZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>SHIRTS</h4>
+                                        <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1640183298005-3a4497cc6a37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amV3ZWxsZXJ5JTIwU0VUU3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>JEWELLERY</h4>
+                                        <p class="item-price"><strike>$4000.00</strike> <span>$2000.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1532947918646-8fdf3c503517?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8amV3ZWxsZXJ5JTIwU0VUU3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>BEAUTY & PERSONALS</h4>
+                                        <p class="item-price"><strike>$599.00</strike> <span>$250.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>						
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1574568419284-8482a36a19ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGxhcHRvcFMlMjBORVd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>ELECTRONIC ACCESSORIES</h4>
+                                        <p class="item-price"><strike>$40000.00</strike> <span>$350000.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1665888661063-e080360c3d92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>HOME & KITCHEN </h4>
+                                        <p class="item-price"><strike>$2000.00</strike> <span>$850.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1520895653685-c739b6db8fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8U01BUlQlMjBXQVRDSEVTfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>WATCHES</h4>
+                                        <p class="item-price"><strike>$3000.00</strike> <span>$2OOO.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>	
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1672611843665-0ab58fa9ca8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fExJR0hUSU5HJTIwR0lGVFN8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4>GIFT ITEMS </h4>
+                                        <p class="item-price"><strike>$550.00</strike> <span>$330.00</span></p>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>						
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+</body>
+</html>
